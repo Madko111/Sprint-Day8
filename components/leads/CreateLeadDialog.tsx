@@ -143,7 +143,7 @@ export default function CreateLeadDialog() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="source">Source</Label>
-                <Select value={formData.source} onValueChange={(value) => setFormData({ ...formData, source: value })}>
+                <Select value={formData.source} onValueChange={(value) => setFormData({ ...formData, source: value || 'Website' })}>
                   <SelectTrigger>
                     <SelectValue />
                   </SelectTrigger>
